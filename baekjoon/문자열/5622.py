@@ -15,7 +15,7 @@ sum = sum(dial[i] + 1 for i in S)
 
 print(sum)
 
-
+# 다른 풀이
 dial = ['ABC', 'DEF', 'GHI', 'JKL', 'MNO', 'PQRS', 'TUV', 'WXYZ']
 a = input()
 ret = 0

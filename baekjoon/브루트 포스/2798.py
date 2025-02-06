@@ -13,4 +13,14 @@ for i in range(N):
             if res < M and M - res < M - max:
                 max = res
 print(max)
-    
+
+# 다른 풀이
+
+my_max = 0
+for i in range(N - 2):
+    for j in range(i + 1, N - 1):
+        for k in range(j + 1, N):
+            my_sum = arr[i] + arr[j] + arr[k]
+            if my_max < my_sum <= M:
+                my_max = my_sum 
+print(my_max)
